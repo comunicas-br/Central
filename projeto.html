@@ -177,64 +177,42 @@
     "sinopse2": "[Segundo parágrafo, se precisar de mais espaço — contexto, estrutura ou ponto de virada.]",
     "tese": "[Por que esse projeto existe, o que ele quer provar ou revelar, e por que agora.]",
     "tom": "[Referências de estilo, formato (observacional, entrevista, road movie, investigativo) e o que evitar.]",
-    "tags": ["tema 1", "tema 2", "tema 3", "tema 4"]
+    "tags": []
   },
   "equipe": [
-    { "name": "[Nome do participante]", "role": "Direção", "tasks": ["roteiro", "entrevistas", "edição final"] },
-    { "name": "[Nome do participante]", "role": "Produção", "tasks": ["agenda", "contato com fontes", "logística"] },
-    { "name": "[Nome do participante]", "role": "Câmera e som", "tasks": ["captação de imagem", "captação de áudio"] }
+    { "name": "[Nome do participante]", "role": "[Função]", "tasks": [] }
   ],
   "cronograma": [
-    { "date": "[00/00]", "label": "[etapa]", "title": "[Pauta fechada / roteiro aprovado]", "desc": "[O que foi decidido nesta etapa.]", "status": "feito" },
-    { "date": "[00/00]", "label": "[etapa]", "title": "[Primeiras entrevistas agendadas]", "desc": "[Detalhe relevante.]", "status": "feito" },
-    { "date": "[00/00]", "label": "[etapa]", "title": "[Captação em andamento]", "desc": "[O que está acontecendo agora, o foco da semana.]", "status": "agora" },
-    { "date": "[00/00]", "label": "[etapa]", "title": "[Início da edição]", "desc": "[O que precisa estar pronto antes disso começar.]", "status": "" },
-    { "date": "[00/00]", "label": "[etapa]", "title": "[Entrega final]", "desc": "[Prazo e formato de entrega.]", "status": "" }
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Marco já concluído]", "desc": "[O que foi decidido nesta etapa.]", "status": "feito" },
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Marco em andamento]", "desc": "[O que está acontecendo agora, o foco da semana.]", "status": "agora" },
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Próximo marco]", "desc": "[O que precisa estar pronto antes disso começar.]", "status": "" }
   ],
-  "calendario": [
-    { "date": "2026-08-20", "title": "[Reunião de pauta]", "desc": "[Detalhe do que será decidido.]", "color": "ok" },
-    { "date": "2026-08-25", "title": "[Gravação — locação 1]", "desc": "[Equipe e equipamento necessários.]", "color": "cool" },
-    { "date": "2026-09-02", "title": "[Entrega de decupagem]", "desc": "", "color": "hot" }
-  ],
+  "calendario": [],
   "checklist": [
     { "group": "Pré-produção", "icon": "check", "items": [
-      { "text": "[Definir pauta / roteiro inicial]", "done": true },
-      { "text": "[Levantar e confirmar fontes / personagens]", "done": true },
-      { "text": "[Fechar equipe e agenda de captação]", "done": false },
-      { "text": "[Providenciar autorizações e termos de consentimento]", "done": false }
+      { "text": "[Tarefa de pré-produção]", "done": false }
     ] },
     { "group": "Captação", "icon": "mic", "items": [
-      { "text": "[Gravar entrevista com (fonte 1)]", "done": true },
-      { "text": "[Gravar entrevista com (fonte 2)]", "done": false },
-      { "text": "[Captar imagens de apoio / B-roll]", "done": false },
-      { "text": "[Backup do material bruto em dois locais]", "done": true }
+      { "text": "[Tarefa de captação]", "done": false }
     ] },
     { "group": "Edição", "icon": "film", "items": [
-      { "text": "[Transcrever e catalogar o material]", "done": false },
-      { "text": "[Selecionar os melhores trechos / decupagem]", "done": false },
-      { "text": "[Montar estrutura / roteiro de edição]", "done": false },
-      { "text": "[Corte fino e trilha sonora]", "done": false }
+      { "text": "[Tarefa de edição]", "done": false }
     ] },
     { "group": "Entrega", "icon": "arrow", "items": [
-      { "text": "[Revisão final e checagem de fatos]", "done": false },
-      { "text": "[Exportar nos formatos exigidos]", "done": false },
-      { "text": "[Enviar / publicar]", "done": false }
+      { "text": "[Tarefa de entrega]", "done": false }
     ] }
   ],
   "pesquisa": {
     "notas": "[Resumo do que já foi pesquisado, linhas de investigação em aberto, e o que ainda precisa ser checado antes de gravar ou publicar.]",
     "fontes": [
-      { "titulo": "[Título ou nome da fonte]", "url": "https://", "tipo": "[tipo, ex: reportagem]", "statusText": "verificado", "statusClass": "ok", "nota": "[o que essa fonte confirma, contradiz ou de onde veio o dado]" },
-      { "titulo": "[Título ou nome da fonte]", "url": "https://", "tipo": "[tipo, ex: dado oficial]", "statusText": "a verificar", "statusClass": "pend", "nota": "[o que essa fonte confirma, contradiz ou de onde veio o dado]" }
+      { "titulo": "[Título ou nome da fonte]", "url": "https://", "tipo": "[tipo, ex: reportagem]", "statusText": "", "statusClass": "", "nota": "[o que essa fonte confirma, contradiz ou de onde veio o dado]" }
     ]
   },
   "material": {
     "driveLabel": "Acessar material bruto no Drive",
-    "driveUrl": "https://drive.google.com/drive/folders/SEU-ID-AQUI",
+    "driveUrl": "",
     "itens": [
-      { "id": "ENT-01", "titulo": "[Entrevista com (nome)]", "tipo": "entrevista", "duracao": "00:00", "statusText": "transcrita", "statusClass": "ok", "arquivo": "[arquivo.mp4]" },
-      { "id": "AUD-01", "titulo": "[Áudio de campo — descrição]", "tipo": "áudio", "duracao": "00:00", "statusText": "a transcrever", "statusClass": "pend", "arquivo": "[arquivo.wav]" },
-      { "id": "IMG-01", "titulo": "[B-roll — local/descrição]", "tipo": "imagem", "duracao": "", "statusText": "pendente", "statusClass": "pend", "arquivo": "[pasta/arquivo]" }
+      { "id": "[COD-01]", "titulo": "[Título do material]", "tipo": "[tipo, ex: entrevista]", "duracao": "", "statusText": "", "statusClass": "", "arquivo": "[nome do arquivo]" }
     ]
   },
   "notas": [

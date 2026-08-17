@@ -39,6 +39,19 @@
 <symbol id="icon-budget" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/><path d="M3 8l1.5-3a2 2 0 0 1 1.8-1.1H17"/><circle cx="16.5" cy="13" r="1.4"/></symbol>
 </svg>
 
+<div class="cp-gate">
+<div class="cp-gatebox">
+<svg class="ic"><use href="#icon-shield"/></svg>
+<h2>Acesso restrito</h2>
+<p>Esta página pede uma senha simples antes de mostrar o conteúdo.</p>
+<form class="cp-gateform" id="cpGateForm" autocomplete="off">
+<input class="cp-gateinput" type="password" id="cpGateInput" name="cppass" placeholder="Senha" autocomplete="off">
+<button class="cp-gatesubmit" type="submit">Entrar</button>
+</form>
+<p class="cp-gateerr" id="cpGateErr" hidden>Senha incorreta. Tente de novo.</p>
+</div>
+</div>
+<div class="cp-shell">
 <nav class="topnav"><div class="navin">
 <a class="brand" href="index.html"><svg class="ic"><use href="#icon-film"/></svg><span>[Nome do Projeto]</span></a>
 <div class="navlinks">
@@ -90,36 +103,13 @@
 <div class="chlog fade-up" id="changelogList"></div>
 </div></section>
 
-<section id="seguranca"><div class="wrap">
-<div class="shead fade-up"><span class="snum">04</span><svg class="ic"><use href="#icon-shield"/></svg><h2>Nota de segurança</h2></div>
-<p class="sdesc fade-up">Este projeto é um site estático (HTML, CSS e JavaScript, sem servidor próprio e sem login). Isso traz limites reais de segurança — descritos aqui sem meias palavras, para que ninguém tenha uma falsa sensação de proteção.</p>
-
-<div class="two fade-up">
-<div>
-<h4 class="mini"><svg class="ic"><use href="#icon-check"/></svg>O que É garantido de verdade</h4>
-<p class="body"><b>Nenhum dado é salvo no navegador de quem visita.</b> As páginas públicas não usam <code class="kb">localStorage</code>, cookies de rastreamento ou qualquer outra forma de persistência local — o que você vê é sempre exatamente o que está publicado nos arquivos .html.</p>
-<p class="body"><b>Não existe nenhum ponto de edição na interface pública.</b> Sem campos editáveis, checklists marcáveis ou botões que alterem conteúdo — então não há como alguém mudar o conteúdo oficial por acidente ou de propósito usando o site. Todo o conteúdo vem de um bloco de dados de texto puro (JSON), montado na tela apenas com texto seguro, nunca inserido como HTML.</p>
-<p class="body"><b>Nenhuma senha, token ou chave de API está embutida no código.</b> Esta versão não contém nenhuma credencial no HTML.</p>
-<p class="body"><b>Política de Segurança de Conteúdo (CSP) ativa.</b> Cada página pública só carrega scripts e estilos do próprio site e bloqueia plugins/objetos externos, o que reduz bastante o risco de um script malicioso rodar aqui.</p>
-</div>
-<div>
-<h4 class="mini"><svg class="ic"><use href="#icon-alert"/></svg>O que NÃO é garantido (limite real)</h4>
-<p class="body"><b>Este site não tem controle de acesso de verdade.</b> Qualquer pessoa com o link consegue ver todo o conteúdo. HTML, CSS e JavaScript puros, publicados como site estático, não têm como verificar "quem" está acessando — qualquer senha feita só com essas tecnologias pode ser contornada por alguém que abra o código-fonte da página, então decidimos não incluir nenhuma.</p>
-<p class="body"><b>O painel de edição (admin.html) é uma ferramenta separada, de uso interno.</b> Ele guarda um rascunho local (no navegador de quem está editando) só para não perder o trabalho no meio da edição — isso nunca fica em nenhuma das páginas públicas. Ele não deve ser publicado junto do site nem compartilhado com quem não faz parte da equipe de edição.</p>
-<p class="body"><b>Não há criptografia de conteúdo.</b> O texto das transcrições e demais informações trafegam e ficam salvos como texto visível nos arquivos — não use este modelo para informações sigilosas, protegidas por fonte, ou que exijam confidencialidade legal.</p>
-<p class="body"><b>Hospedagem pública mantém histórico.</b> Se este site for publicado num serviço como GitHub Pages, versões antigas dos arquivos podem continuar acessíveis pelo histórico do repositório mesmo depois de "removidas" da versão atual.</p>
-<p class="body"><b>Proteção contra "clickjacking" (a página ser embutida dentro de outro site) não está ativa.</b> Essa proteção específica só funciona quando enviada como cabeçalho HTTP pelo servidor — hospedagens de arquivo estático simples, como o GitHub Pages sem configuração extra, não permitem isso.</p>
-<p class="body"><b>Se precisar de acesso restrito de verdade, sem gastar nada:</b> o caminho mais simples é o <b>Cloudflare Access</b> (parte do Cloudflare Zero Trust — grátis até 50 usuários). Ele funciona como um "pedágio" antes mesmo do HTML chegar ao visitante: quem tentar abrir o site recebe um código de uso único por e-mail (login por PIN, sem precisar criar senha nem configurar Google/Okta) e só entra se o e-mail estiver na lista que você autorizar. Por rodar do lado do servidor (na borda da rede da Cloudflare), é um controle de verdade — resolve exatamente o limite descrito acima, o que HTML/CSS/JS sozinhos nunca conseguiriam. Requer o domínio (ou o Cloudflare Pages, se for onde o site está hospedado) apontando para a Cloudflare. Alternativa também gratuita: hospedar num repositório privado com autenticação própria (ex.: GitHub Pages com repositório privado, disponível em contas educacionais/gratuitas elegíveis).</p>
-</div>
-</div>
-</div></section>
-
 </main>
 
 <footer><div class="wrap">
 <b data-mount="footerProject">[Título do Projeto]</b><span> · central de produção · painel somente para consulta</span><br>
 <span class="fnote"><svg class="ic"><use href="#icon-clock"/></svg><span data-mount="footerPublished">Conteúdo publicado em: —</span></span>
 </div></footer>
+</div>
 
 <script type="application/json" id="siteData">
 {

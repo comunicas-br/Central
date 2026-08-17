@@ -517,3 +517,28 @@ footer .fnote .ic{width:13px;height:13px}
 .fade-up{animation:fadeUp .5s ease both}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.fade-up{animation:none}}
+
+/* ================= acesso por senha simples (barreira leve, não é
+   segurança de verdade — a senha fica no código-fonte da página, então
+   qualquer pessoa com um pouco de conhecimento técnico consegue contornar.
+   Serve só para não deixar o link aberto para qualquer visitante casual.
+   Some sozinho, em todas as páginas, quando nenhuma senha é definida no
+   painel de edição (Meta do projeto). ================= */
+.cp-shell{display:none}
+body.cp-unlocked .cp-shell{display:block}
+.cp-gate{display:none;position:fixed;inset:0;z-index:9999;align-items:center;justify-content:center;
+ background:var(--bg);padding:24px}
+body:not(.cp-unlocked) .cp-gate{display:flex}
+.cp-gatebox{max-width:360px;width:100%;text-align:center;background:var(--card);
+ border:1px solid var(--line2);border-radius:16px;padding:32px 28px}
+.cp-gatebox .ic{width:30px;height:30px;color:var(--acc);margin-bottom:14px}
+.cp-gatebox h2{margin:0 0 8px;font-size:20px;color:var(--tx)}
+.cp-gatebox p{margin:0 0 18px;color:var(--tx2);font-size:14px;line-height:1.5}
+.cp-gateform{display:flex;gap:8px}
+.cp-gateinput{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line2);border-radius:10px;
+ padding:10px 12px;color:var(--tx);font-size:14px;font-family:var(--font)}
+.cp-gateinput:focus{outline:2px solid var(--acc);outline-offset:1px}
+.cp-gatesubmit{border:none;border-radius:10px;padding:10px 16px;background:var(--acc);color:#1a1305;
+ font-weight:700;font-size:14px;cursor:pointer;white-space:nowrap;transition:background-color .15s}
+.cp-gatesubmit:hover{background:var(--acc2)}
+.cp-gateerr{margin:14px 0 0;color:var(--hot);font-size:13px}

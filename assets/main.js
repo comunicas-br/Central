@@ -84,6 +84,42 @@
   function fmt(str) { return str == null ? '' : String(str); }
   function clear(node) { if (node) node.textContent = ''; }
 
+  /* ================= acesso por senha simples =================
+     Barreira leve, não é segurança de verdade: como o site é HTML/CSS/JS
+     estático, a senha configurada fica visível para quem abrir o
+     código-fonte da página. Serve só para não deixar o link aberto para
+     qualquer visitante casual — "é melhor que nada". Se nenhuma senha for
+     definida (meta.sitePassword vazio), o site fica aberto normalmente,
+     como antes. */
+  function initPasswordGate(meta) {
+    var body = document.body;
+    var pass = meta && meta.sitePassword ? String(meta.sitePassword) : '';
+    if (!pass) { body.classList.add('cp-unlocked'); return; }
+    var storeKey = 'cpAccess_' + (meta.projectName || 'site');
+    var stored = null;
+    try { stored = localStorage.getItem(storeKey); } catch (e) { stored = null; }
+    if (stored === pass) { body.classList.add('cp-unlocked'); return; }
+    body.classList.remove('cp-unlocked');
+    var form = document.getElementById('cpGateForm');
+    var input = document.getElementById('cpGateInput');
+    var err = document.getElementById('cpGateErr');
+    if (!form || !input) return;
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var v = input.value || '';
+      if (v === pass) {
+        try { localStorage.setItem(storeKey, v); } catch (e2) { /* sem storage, sem problema: só pede de novo na próxima visita */ }
+        body.classList.add('cp-unlocked');
+        if (err) err.hidden = true;
+      } else {
+        if (err) err.hidden = false;
+        input.value = '';
+        input.focus();
+      }
+    });
+    setTimeout(function () { input.focus(); }, 60);
+  }
+
   /* ================= meta: nome do projeto, logo, última atualização ================= */
   function renderMeta(data) {
     var meta = data.meta || {};
@@ -790,6 +826,7 @@
   /* ================= despacho por página ================= */
   document.addEventListener('DOMContentLoaded', function () {
     var data = readData();
+    initPasswordGate(data.meta || {});
     renderMeta(data);
     var page = document.body.getAttribute('data-page');
     if (page === 'inicio') renderIndex(data);

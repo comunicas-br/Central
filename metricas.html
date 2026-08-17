@@ -39,6 +39,19 @@
 <symbol id="icon-budget" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/><path d="M3 8l1.5-3a2 2 0 0 1 1.8-1.1H17"/><circle cx="16.5" cy="13" r="1.4"/></symbol>
 </svg>
 
+<div class="cp-gate">
+<div class="cp-gatebox">
+<svg class="ic"><use href="#icon-shield"/></svg>
+<h2>Acesso restrito</h2>
+<p>Esta página pede uma senha simples antes de mostrar o conteúdo.</p>
+<form class="cp-gateform" id="cpGateForm" autocomplete="off">
+<input class="cp-gateinput" type="password" id="cpGateInput" name="cppass" placeholder="Senha" autocomplete="off">
+<button class="cp-gatesubmit" type="submit">Entrar</button>
+</form>
+<p class="cp-gateerr" id="cpGateErr" hidden>Senha incorreta. Tente de novo.</p>
+</div>
+</div>
+<div class="cp-shell">
 <nav class="topnav"><div class="navin">
 <a class="brand" href="index.html"><svg class="ic"><use href="#icon-film"/></svg><span>[Nome do Projeto]</span></a>
 <div class="navlinks">
@@ -95,6 +108,7 @@
 <b data-mount="footerProject">[Título do Projeto]</b><span> · central de produção · painel somente para consulta</span><br>
 <span class="fnote"><svg class="ic"><use href="#icon-clock"/></svg><span data-mount="footerPublished">Conteúdo publicado em: —</span></span>
 </div></footer>
+</div>
 
 <script type="application/json" id="siteData">
 {

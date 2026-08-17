@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>[Título do Projeto] · Arquivo / Histórico · central de produção</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%230b0c10%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%276%27 fill=%27%23e8b04b%27/%3E%3C/svg%3E">
+</head>
+<body data-page="arquivo">
+
+<svg class="icon-sprite" aria-hidden="true">
+<symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></symbol>
+<symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="icon-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
+<symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-1 2-2 0-.6-.2-1-.5-1.4-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4c0-4.4-4-7.5-9-7.5Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="8" r="1"/></symbol>
+<symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><path d="M16 4.2c1.3.4 2.2 1.6 2.2 3s-.9 2.6-2.2 3M20.5 20c0-2.6-1.8-4.8-4.2-5.4"/></symbol>
+<symbol id="icon-link" viewBox="0 0 24 24"><path d="M9 15l6-6"/><path d="M13 5l1-1a3.5 3.5 0 1 1 5 5l-1 1M11 19l-1 1a3.5 3.5 0 1 1-5-5l1-1"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="icon-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/></symbol>
+<symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12 3h6a2 2 0 0 1 2 2v6L11 20l-8-8L12 3Z"/><circle cx="16" cy="8" r="1.3"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></symbol>
+<symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6Z"/></symbol>
+<symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.7"/><path d="M21 16l-5.5-5.5L4 21"/></symbol>
+<symbol id="icon-audio" viewBox="0 0 24 24"><path d="M3 12h2M7 8v8M11 5v14M15 8v8M19 10v4M22 12h-1"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9.3 12l1.8 1.8L15 10"/></symbol>
+<symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="icon-film" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M7 4v16M17 4v16M2.5 9h4.5M2.5 15h4.5M17 9h4.5M17 15h4.5"/></symbol>
+<symbol id="icon-presentation" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M10 9.3v4.4l4-2.2z"/></symbol>
+<symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="5" y="12" width="3.2" height="7"/><rect x="10.4" y="7" width="3.2" height="12"/><rect x="15.8" y="15" width="3.2" height="4"/></symbol>
+<symbol id="icon-idea" viewBox="0 0 24 24"><path d="M9 21h6M10 18h4"/><path d="M12 3a6.5 6.5 0 0 0-3.8 11.8c.6.5 1.3 1.3 1.3 2.2h5c0-.9.7-1.7 1.3-2.2A6.5 6.5 0 0 0 12 3Z"/></symbol>
+<symbol id="icon-budget" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/><path d="M3 8l1.5-3a2 2 0 0 1 1.8-1.1H17"/><circle cx="16.5" cy="13" r="1.4"/></symbol>
+</svg>
+
+<nav class="topnav"><div class="navin">
+<a class="brand" href="index.html"><svg class="ic"><use href="#icon-film"/></svg><span>[Nome do Projeto]</span></a>
+<div class="navlinks">
+<a href="index.html" data-page="inicio"><svg class="ic"><use href="#icon-home"/></svg>Visão geral</a>
+<a href="ideias.html" data-page="ideias"><svg class="ic"><use href="#icon-idea"/></svg>Ideias</a>
+<a href="projeto.html" data-page="projeto"><svg class="ic"><use href="#icon-target"/></svg>Projeto</a>
+<a href="transcricoes.html" data-page="transcricoes"><svg class="ic"><use href="#icon-mic"/></svg>Transcrições</a>
+<a href="identidade.html" data-page="identidade"><svg class="ic"><use href="#icon-palette"/></svg>Identidade</a>
+<div class="navmore">
+<button type="button" class="navmorebtn on" aria-haspopup="true" aria-expanded="false">Mais<svg class="ic"><use href="#icon-chevron"/></svg></button>
+<div class="navmorepanel">
+<a href="apresentacao.html" data-page="apresentacao"><svg class="ic"><use href="#icon-presentation"/></svg>Apresentação</a>
+<a href="metricas.html" data-page="metricas"><svg class="ic"><use href="#icon-chart"/></svg>Métricas</a>
+<a href="orcamento.html" data-page="orcamento"><svg class="ic"><use href="#icon-budget"/></svg>Orçamento</a>
+<a href="arquivo.html" data-page="arquivo" class="on"><svg class="ic"><use href="#icon-folder"/></svg>Arquivo</a>
+</div>
+</div>
+</div>
+<button type="button" class="navtoggle" aria-label="Abrir menu" aria-expanded="false"><svg class="ic ic-lg"><use href="#icon-menu"/></svg></button>
+</div></nav>
+
+<main>
+<section class="section-tight"><div class="wrap">
+<div class="readonly-flag fade-up"><svg class="ic"><use href="#icon-eye"/></svg><span>Consulta apenas. Contatos, materiais anteriores e o histórico de versões deste projeto.</span></div>
+<div class="shead fade-up"><svg class="ic ic-lg"><use href="#icon-folder"/></svg><h2>Arquivo / Histórico</h2></div>
+<p class="sdesc fade-up">Contatos e links úteis, materiais de versões anteriores e o registro de mudanças da central de produção.</p>
+</div></section>
+
+<section id="contatos"><div class="wrap">
+<div class="shead fade-up"><span class="snum">01</span><svg class="ic"><use href="#icon-mail"/></svg><h2>Contatos e links</h2></div>
+<p class="sdesc fade-up">Fontes humanas, parceiros e links úteis do projeto, num só lugar.</p>
+<div class="cgrid fade-up" id="contatosList"></div>
+</div></section>
+
+<section id="materiais"><div class="wrap">
+<div class="shead fade-up"><span class="snum">02</span><svg class="ic"><use href="#icon-clock"/></svg><h2>Versões publicadas</h2></div>
+<p class="sdesc fade-up">Cada linha vira registro quando uma nova versão desta central é publicada — permite achar rapidamente um material ou estado anterior do projeto.</p>
+<div class="fade-up table-scroll">
+<table class="archivetbl">
+<thead><tr><th>Data</th><th>Versão</th><th>Resumo da mudança</th><th>Arquivo</th></tr></thead>
+<tbody id="versoesBody"></tbody>
+</table>
+</div>
+</div></section>
+
+<section id="historico"><div class="wrap">
+<div class="shead fade-up"><span class="snum">03</span><svg class="ic"><use href="#icon-clock"/></svg><h2>Registro de mudanças</h2></div>
+<p class="sdesc fade-up">O que mudou em cada atualização da central de produção.</p>
+<div class="chlog fade-up" id="changelogList"></div>
+</div></section>
+
+<section id="seguranca"><div class="wrap">
+<div class="shead fade-up"><span class="snum">04</span><svg class="ic"><use href="#icon-shield"/></svg><h2>Nota de segurança</h2></div>
+<p class="sdesc fade-up">Este projeto é um site estático (HTML, CSS e JavaScript, sem servidor próprio e sem login). Isso traz limites reais de segurança — descritos aqui sem meias palavras, para que ninguém tenha uma falsa sensação de proteção.</p>
+
+<div class="two fade-up">
+<div>
+<h4 class="mini"><svg class="ic"><use href="#icon-check"/></svg>O que É garantido de verdade</h4>
+<p class="body"><b>Nenhum dado é salvo no navegador de quem visita.</b> As páginas públicas não usam <code class="kb">localStorage</code>, cookies de rastreamento ou qualquer outra forma de persistência local — o que você vê é sempre exatamente o que está publicado nos arquivos .html.</p>
+<p class="body"><b>Não existe nenhum ponto de edição na interface pública.</b> Sem campos editáveis, checklists marcáveis ou botões que alterem conteúdo — então não há como alguém mudar o conteúdo oficial por acidente ou de propósito usando o site. Todo o conteúdo vem de um bloco de dados de texto puro (JSON), montado na tela apenas com texto seguro, nunca inserido como HTML.</p>
+<p class="body"><b>Nenhuma senha, token ou chave de API está embutida no código.</b> Esta versão não contém nenhuma credencial no HTML.</p>
+<p class="body"><b>Política de Segurança de Conteúdo (CSP) ativa.</b> Cada página pública só carrega scripts e estilos do próprio site e bloqueia plugins/objetos externos, o que reduz bastante o risco de um script malicioso rodar aqui.</p>
+</div>
+<div>
+<h4 class="mini"><svg class="ic"><use href="#icon-alert"/></svg>O que NÃO é garantido (limite real)</h4>
+<p class="body"><b>Este site não tem controle de acesso de verdade.</b> Qualquer pessoa com o link consegue ver todo o conteúdo. HTML, CSS e JavaScript puros, publicados como site estático, não têm como verificar "quem" está acessando — qualquer senha feita só com essas tecnologias pode ser contornada por alguém que abra o código-fonte da página, então decidimos não incluir nenhuma.</p>
+<p class="body"><b>O painel de edição (admin.html) é uma ferramenta separada, de uso interno.</b> Ele guarda um rascunho local (no navegador de quem está editando) só para não perder o trabalho no meio da edição — isso nunca fica em nenhuma das páginas públicas. Ele não deve ser publicado junto do site nem compartilhado com quem não faz parte da equipe de edição.</p>
+<p class="body"><b>Não há criptografia de conteúdo.</b> O texto das transcrições e demais informações trafegam e ficam salvos como texto visível nos arquivos — não use este modelo para informações sigilosas, protegidas por fonte, ou que exijam confidencialidade legal.</p>
+<p class="body"><b>Hospedagem pública mantém histórico.</b> Se este site for publicado num serviço como GitHub Pages, versões antigas dos arquivos podem continuar acessíveis pelo histórico do repositório mesmo depois de "removidas" da versão atual.</p>
+<p class="body"><b>Proteção contra "clickjacking" (a página ser embutida dentro de outro site) não está ativa.</b> Essa proteção específica só funciona quando enviada como cabeçalho HTTP pelo servidor — hospedagens de arquivo estático simples, como o GitHub Pages sem configuração extra, não permitem isso.</p>
+<p class="body"><b>Se precisar de acesso restrito de verdade, sem gastar nada:</b> o caminho mais simples é o <b>Cloudflare Access</b> (parte do Cloudflare Zero Trust — grátis até 50 usuários). Ele funciona como um "pedágio" antes mesmo do HTML chegar ao visitante: quem tentar abrir o site recebe um código de uso único por e-mail (login por PIN, sem precisar criar senha nem configurar Google/Okta) e só entra se o e-mail estiver na lista que você autorizar. Por rodar do lado do servidor (na borda da rede da Cloudflare), é um controle de verdade — resolve exatamente o limite descrito acima, o que HTML/CSS/JS sozinhos nunca conseguiriam. Requer o domínio (ou o Cloudflare Pages, se for onde o site está hospedado) apontando para a Cloudflare. Alternativa também gratuita: hospedar num repositório privado com autenticação própria (ex.: GitHub Pages com repositório privado, disponível em contas educacionais/gratuitas elegíveis).</p>
+</div>
+</div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+<b data-mount="footerProject">[Título do Projeto]</b><span> · central de produção · painel somente para consulta</span><br>
+<span class="fnote"><svg class="ic"><use href="#icon-clock"/></svg><span data-mount="footerPublished">Conteúdo publicado em: —</span></span>
+</div></footer>
+
+<script type="application/json" id="siteData">
+{
+  "meta": {
+    "projectName": "[Nome do Projeto]",
+    "lastUpdate": { "weekday": "Segunda-feira", "date": "17 de agosto de 2026", "time": "01:36" }
+  },
+  "contatos": [
+    { "nome": "[Nome da fonte / parceiro]", "funcao": "[função ou instituição]", "email": "email@exemplo.com" },
+    { "nome": "[Nome da fonte / parceiro]", "funcao": "[função ou instituição]", "email": "email@exemplo.com" }
+  ],
+  "versoes": [
+    { "data": "17/08/2026", "versao": "v3.1", "resumo": "Seleção visual no calendário, gráfico de pizza no Orçamento por categoria, menu \"Mais\" na navegação (Arquivo e outros 3 links não ficam mais escondidos) e nota de segurança mais concreta.", "arquivoLabel": "[link/nome do pacote]", "arquivoLink": "#" },
+    { "data": "17/08/2026", "versao": "v3.0", "resumo": "Nova página \"Ideias\" (banco de ideias, pré-planejamento e escolha do tema com votação) e nova página \"Orçamento\" (custo total, itens previstos x gastos, resumo por categoria).", "arquivoLabel": "[link/nome do pacote]", "arquivoLink": "#" },
+    { "data": "17/08/2026", "versao": "v2.0", "resumo": "Painel de edição visual (admin.html), Andamento da produção na Visão geral, botão de acesso ao Drive, páginas de Apresentação/Publicação e Métricas de marketing.", "arquivoLabel": "[link/nome do pacote]", "arquivoLink": "#" },
+    { "data": "17/08/2026", "versao": "v1.0", "resumo": "Reestruturação em 5 páginas, modo somente leitura, identidade visual ampliada e seção de transcrições.", "arquivoLabel": "[link/nome do pacote]", "arquivoLink": "#" }
+  ],
+  "changelog": [
+    { "data": "17/08\n2026", "versao": "v3.1", "titulo": "Calendário, gráfico de orçamento, navegação e segurança", "desc": "Ajustes pedidos pela equipe: mostrar o dia selecionado no calendário, visualizar o orçamento em gráfico, destravar o acesso ao Arquivo no menu, e uma recomendação concreta de segurança gratuita.", "items": [
+      "Calendário: o dia clicado agora fica visivelmente destacado",
+      "Orçamento: gráfico de pizza por categoria, com legenda e valores ao passar o mouse",
+      "Navegação: os 4 links menos usados (Apresentação, Métricas, Orçamento, Arquivo) foram para um menu \"Mais\" — antes ficavam escondidos atrás de um scroll horizontal sem nenhuma pista visual",
+      "Nota de segurança: caminho concreto e gratuito (Cloudflare Access com login por e-mail) para quem precisar de acesso restrito de verdade"
+    ] },
+    { "data": "17/08\n2026", "versao": "v3.0", "titulo": "Ideias (brainstorm + tema) e Orçamento", "desc": "A pedido da equipe: um espaço para brainstorm e banco de ideias, pré-planejamento com escolha do tema, e uma aba de orçamento e custo total do projeto.", "items": [
+      "Nova página \"Ideias\" — banco de ideias (brainstorm) com tags de tema",
+      "Pré-planejamento: temas candidatos com tags de dificuldade/possibilidade e placar de votação (registrado pelo painel após a votação da equipe)",
+      "Nova página \"Orçamento\" — itens de custo previsto x gasto, com status",
+      "Totais e resumo por categoria calculados automaticamente a partir dos itens lançados no painel"
+    ] },
+    { "data": "17/08\n2026", "versao": "v2.0", "titulo": "Painel de edição visual e novas páginas", "desc": "A pedido da equipe: agora é possível atualizar o conteúdo por um painel visual (admin.html), sem editar HTML.", "items": [
+      "Novo painel admin.html — edição visual com exportação em um clique",
+      "\"Andamento da produção\" agora também aparece na Visão geral",
+      "Botão direto para a pasta de material bruto no Drive",
+      "Nova página \"Apresentação / Publicação\" (com o trabalho escrito em ABNT)",
+      "Nova página \"Métricas de marketing\""
+    ] },
+    { "data": "17/08\n2026", "versao": "v1.0", "titulo": "Central reorganizada em 5 páginas, somente leitura", "desc": "Reestruturação completa: navegação por páginas, ícones consistentes, identidade visual ampliada, seção dedicada de transcrições e remoção de toda edição pela interface pública.", "items": [] }
+  ]
+}
+</script>
+<script src="assets/main.js"></script>
+</body></html>

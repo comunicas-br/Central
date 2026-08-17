@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>[Título do Projeto] · Visão geral · central de produção</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%230b0c10%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%276%27 fill=%27%23e8b04b%27/%3E%3C/svg%3E">
+<!--
+  MODELO · CENTRAL DE PRODUÇÃO DE REPORTAGENS E DOCUMENTÁRIOS
+  ------------------------------------------------------------
+  Este site é SOMENTE PARA CONSULTA — não existe nenhum campo editável,
+  checklist marcável ou botão que altere conteúdo aqui. Todo o conteúdo
+  desta página vem do bloco <script id="siteData"> logo abaixo (puro
+  texto/JSON, nunca executado como código) e é montado por assets/main.js
+  usando apenas texto seguro (sem inserir HTML de terceiros).
+
+  Para atualizar o conteúdo SEM MEXER NESTE ARQUIVO, use o painel visual
+  admin.html (nesta mesma pasta): edite lá, exporte, e substitua os
+  arquivos publicados pelos que ele gerar. Ver LEIA-ME.md.
+-->
+</head>
+<body data-page="inicio">
+
+<svg class="icon-sprite" aria-hidden="true">
+<symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></symbol>
+<symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="icon-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
+<symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-1 2-2 0-.6-.2-1-.5-1.4-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4c0-4.4-4-7.5-9-7.5Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="8" r="1"/></symbol>
+<symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><path d="M16 4.2c1.3.4 2.2 1.6 2.2 3s-.9 2.6-2.2 3M20.5 20c0-2.6-1.8-4.8-4.2-5.4"/></symbol>
+<symbol id="icon-link" viewBox="0 0 24 24"><path d="M9 15l6-6"/><path d="M13 5l1-1a3.5 3.5 0 1 1 5 5l-1 1M11 19l-1 1a3.5 3.5 0 1 1-5-5l1-1"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="icon-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/></symbol>
+<symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12 3h6a2 2 0 0 1 2 2v6L11 20l-8-8L12 3Z"/><circle cx="16" cy="8" r="1.3"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></symbol>
+<symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6Z"/></symbol>
+<symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.7"/><path d="M21 16l-5.5-5.5L4 21"/></symbol>
+<symbol id="icon-audio" viewBox="0 0 24 24"><path d="M3 12h2M7 8v8M11 5v14M15 8v8M19 10v4M22 12h-1"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9.3 12l1.8 1.8L15 10"/></symbol>
+<symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="icon-film" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M7 4v16M17 4v16M2.5 9h4.5M2.5 15h4.5M17 9h4.5M17 15h4.5"/></symbol>
+<symbol id="icon-presentation" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M10 9.3v4.4l4-2.2z"/></symbol>
+<symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="5" y="12" width="3.2" height="7"/><rect x="10.4" y="7" width="3.2" height="12"/><rect x="15.8" y="15" width="3.2" height="4"/></symbol>
+<symbol id="icon-idea" viewBox="0 0 24 24"><path d="M9 21h6M10 18h4"/><path d="M12 3a6.5 6.5 0 0 0-3.8 11.8c.6.5 1.3 1.3 1.3 2.2h5c0-.9.7-1.7 1.3-2.2A6.5 6.5 0 0 0 12 3Z"/></symbol>
+<symbol id="icon-budget" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/><path d="M3 8l1.5-3a2 2 0 0 1 1.8-1.1H17"/><circle cx="16.5" cy="13" r="1.4"/></symbol>
+</svg>
+
+<nav class="topnav"><div class="navin">
+<a class="brand" href="index.html"><svg class="ic"><use href="#icon-film"/></svg><span>[Nome do Projeto]</span></a>
+<div class="navlinks">
+<a href="index.html" data-page="inicio" class="on"><svg class="ic"><use href="#icon-home"/></svg>Visão geral</a>
+<a href="ideias.html" data-page="ideias"><svg class="ic"><use href="#icon-idea"/></svg>Ideias</a>
+<a href="projeto.html" data-page="projeto"><svg class="ic"><use href="#icon-target"/></svg>Projeto</a>
+<a href="transcricoes.html" data-page="transcricoes"><svg class="ic"><use href="#icon-mic"/></svg>Transcrições</a>
+<a href="identidade.html" data-page="identidade"><svg class="ic"><use href="#icon-palette"/></svg>Identidade</a>
+<div class="navmore">
+<button type="button" class="navmorebtn" aria-haspopup="true" aria-expanded="false">Mais<svg class="ic"><use href="#icon-chevron"/></svg></button>
+<div class="navmorepanel">
+<a href="apresentacao.html" data-page="apresentacao"><svg class="ic"><use href="#icon-presentation"/></svg>Apresentação</a>
+<a href="metricas.html" data-page="metricas"><svg class="ic"><use href="#icon-chart"/></svg>Métricas</a>
+<a href="orcamento.html" data-page="orcamento"><svg class="ic"><use href="#icon-budget"/></svg>Orçamento</a>
+<a href="arquivo.html" data-page="arquivo"><svg class="ic"><use href="#icon-folder"/></svg>Arquivo</a>
+</div>
+</div>
+</div>
+<button type="button" class="navtoggle" aria-label="Abrir menu" aria-expanded="false"><svg class="ic ic-lg"><use href="#icon-menu"/></svg></button>
+</div></nav>
+
+<main>
+<section class="hero"><div class="wrap">
+
+<div class="readonly-flag fade-up"><svg class="ic"><use href="#icon-eye"/></svg><span>Painel somente para consulta — todo o conteúdo é atualizado pelo painel de edição visual (admin.html) e publicado como uma nova versão. Não há campos editáveis nesta página.</span></div>
+
+<div class="herotop fade-up">
+<div class="logobox-lg"><img id="logoImg" data-mount="logo" alt="Logo do projeto"><div class="fb" id="logoFb">LOGO<br>AQUI</div></div>
+<div class="herometa">
+<div class="badgerow">
+<div class="stagebadge"><i></i><span id="heroStageBadge">Em captação</span></div>
+</div>
+<div class="kicker" id="heroKicker"></div>
+<h1 class="title" id="heroTitle"></h1>
+<p class="sub" id="heroSynopsis"></p>
+</div>
+</div>
+
+<div class="updatepanel fade-up">
+<svg class="ic"><use href="#icon-clock"/></svg>
+<div>
+<div class="ulabel">Última atualização</div>
+<div class="udate" data-mount="lastUpdateDate">—</div>
+<div class="utime" data-mount="lastUpdateTime">—</div>
+</div>
+</div>
+
+<div class="stats fade-up" id="heroStats"></div>
+
+</div></section>
+
+<section><div class="wrap">
+<div class="shead fade-up"><svg class="ic"><use href="#icon-arrow"/></svg><h2>Navegar pela central</h2></div>
+<p class="sdesc fade-up">Todo o conteúdo do projeto está dividido nestas páginas — clique para consultar cada parte.</p>
+<div class="pagegrid fade-up">
+<a class="pagecard" href="ideias.html"><svg class="ic"><use href="#icon-idea"/></svg><h3>Ideias</h3><p>Banco de ideias em brainstorm, pré-planejamento e escolha do tema com votação.</p></a>
+<a class="pagecard" href="projeto.html"><svg class="ic"><use href="#icon-target"/></svg><h3>Projeto / Planejamento</h3><p>Objetivos, estratégias, cronograma, calendário, checklist, equipe, pesquisa, material e pendências.</p></a>
+<a class="pagecard" href="transcricoes.html"><svg class="ic"><use href="#icon-mic"/></svg><h3>Transcrições</h3><p>Todas as transcrições do projeto, com busca e leitura integral.</p></a>
+<a class="pagecard" href="identidade.html"><svg class="ic"><use href="#icon-palette"/></svg><h3>Identidade visual</h3><p>Logo, paleta de cores, tipografia e diretrizes de marca em detalhe.</p></a>
+<a class="pagecard" href="apresentacao.html"><svg class="ic"><use href="#icon-presentation"/></svg><h3>Apresentação / Publicação</h3><p>Apresentação final, plataformas de publicação e o trabalho escrito em ABNT.</p></a>
+<a class="pagecard" href="metricas.html"><svg class="ic"><use href="#icon-chart"/></svg><h3>Métricas de marketing</h3><p>Alcance, engajamento e resultados das campanhas de divulgação.</p></a>
+<a class="pagecard" href="orcamento.html"><svg class="ic"><use href="#icon-budget"/></svg><h3>Orçamento</h3><p>Custo total do projeto, itens previstos vs. gastos e resumo por categoria.</p></a>
+<a class="pagecard" href="arquivo.html"><svg class="ic"><use href="#icon-folder"/></svg><h3>Arquivo / Histórico</h3><p>Contatos, materiais anteriores e o histórico de versões publicadas.</p></a>
+</div>
+</div></section>
+
+<section id="andamento"><div class="wrap">
+<div class="shead fade-up"><span class="snum">01</span><svg class="ic"><use href="#icon-check"/></svg><h2>Andamento da produção</h2></div>
+<p class="sdesc fade-up">Estado do projeto em uma tela: números gerais em cima, progresso por etapa embaixo.</p>
+<div class="stats2 fade-up" id="andamentoStats"></div>
+<div class="phases fade-up" id="andamentoPhases"></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="shead fade-up"><span class="snum">02</span><svg class="ic"><use href="#icon-alert"/></svg><h2>Regras do projeto</h2></div>
+<p class="sdesc fade-up">A proposta em poucos princípios — o que sustenta o projeto e não pode ser quebrado ao longo da produção.</p>
+<div class="legend fade-up" id="regrasList"></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="shead fade-up"><span class="snum">03</span><svg class="ic"><use href="#icon-users"/></svg><h2>Personagens</h2></div>
+<p class="sdesc fade-up">Quem está na história, com foto e uma descrição de quem é essa pessoa e o papel dela no projeto.</p>
+<div class="pgrid fade-up" id="personagensList"></div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+<div class="readonly-flag"><svg class="ic"><use href="#icon-shield"/></svg><span><b>Sobre a segurança deste site:</b> é um site estático (HTML/CSS/JS), sem login e sem servidor próprio — por isso ele não guarda dados sensíveis, não usa armazenamento local e não tem nenhum ponto de edição pela interface pública. Isso reduz riscos, mas <b>não substitui autenticação real</b>: qualquer pessoa com o link acessa o conteúdo. Leia a nota completa em <a href="arquivo.html#seguranca">Arquivo → Segurança</a>.</span></div>
+<b data-mount="footerProject">[Nome do Projeto]</b><span> · central de produção · painel somente para consulta</span><br>
+<span class="fnote"><svg class="ic"><use href="#icon-clock"/></svg><span data-mount="footerPublished">Conteúdo publicado em: —</span></span>
+</div></footer>
+
+<script type="application/json" id="siteData">
+{
+  "meta": {
+    "projectName": "[Nome do Projeto]",
+    "logo": "",
+    "lastUpdate": { "weekday": "Segunda-feira", "date": "17 de agosto de 2026", "time": "01:36" }
+  },
+  "hero": {
+    "stageBadge": "Em captação",
+    "kicker": "[Documentário / Reportagem]",
+    "title": "[Título do\nProjeto |Aqui|]",
+    "synopsis": "[Sinopse curta de uma ou duas frases — o gancho do projeto, o que ele mostra e por que importa.]",
+    "stats": [
+      { "value": "00h00", "label": "horas gravadas" },
+      { "value": "0", "label": "entrevistas feitas" },
+      { "value": "0", "label": "clipes catalogados" },
+      { "value": "0", "label": "dias de captação" },
+      { "value": "0", "label": "tarefas concluídas" },
+      { "value": "--/--", "label": "previsão de entrega" }
+    ]
+  },
+  "andamento": {
+    "stats": [
+      { "value": "0", "label": "horas de material bruto" },
+      { "value": "0", "label": "entrevistas feitas" },
+      { "value": "0", "label": "clipes catalogados" },
+      { "value": "0", "label": "capítulos estruturados" },
+      { "value": "0", "label": "tarefas em aberto" },
+      { "value": "0", "label": "dias até a entrega" }
+    ],
+    "phases": [
+      { "name": "Pré-produção", "pct": 100, "icon": "check" },
+      { "name": "Roteiro / pauta", "pct": 60, "icon": "file" },
+      { "name": "Captação", "pct": 30, "icon": "mic" },
+      { "name": "Edição", "pct": 0, "icon": "film" },
+      { "name": "Pós-produção", "pct": 0, "icon": "palette" },
+      { "name": "Entrega / distribuição", "pct": 0, "icon": "arrow" }
+    ]
+  },
+  "regras": [
+    { "title": "[Princípio 1]", "desc": "[O que esse princípio garante e por que ele existe.]" },
+    { "title": "[Princípio 2]", "desc": "[O que esse princípio garante e por que ele existe.]" },
+    { "title": "[Princípio 3]", "desc": "[O que esse princípio garante e por que ele existe.]" }
+  ],
+  "personagens": [
+    { "name": "[Nome do personagem]", "tagText": "protagonista", "tagClass": "prot", "desc": "[Quem é essa pessoa, sua relação com a história e o que ela representa no projeto.]" },
+    { "name": "[Nome do personagem]", "tagText": "voz de apoio", "tagClass": "voz", "desc": "[Quem é essa pessoa, sua relação com a história e o que ela representa no projeto.]" },
+    { "name": "[Nome do personagem]", "tagText": "pendente de gravar", "tagClass": "pend", "desc": "[Quem é essa pessoa, sua relação com a história e o que ela representa no projeto.]" }
+  ]
+}
+</script>
+<script src="assets/main.js"></script>
+</body></html>

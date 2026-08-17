@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>[Título do Projeto] · Identidade visual · central de produção</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%230b0c10%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%276%27 fill=%27%23e8b04b%27/%3E%3C/svg%3E">
+<!--
+  As cores oficiais deste projeto são as variáveis CSS em :root, no topo
+  de assets/style.css (--acc, --acc2, --bg, --card, --tx, etc). Os cartões
+  de cor abaixo são só a VITRINE dessas variáveis — mudar aqui não muda a
+  cor de verdade; para isso, edite assets/style.css (isso garante que a
+  paleta nunca fica "fora de sincronia" entre esta página e o resto do site).
+-->
+</head>
+<body data-page="identidade">
+
+<svg class="icon-sprite" aria-hidden="true">
+<symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></symbol>
+<symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="icon-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
+<symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-1 2-2 0-.6-.2-1-.5-1.4-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4c0-4.4-4-7.5-9-7.5Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="8" r="1"/></symbol>
+<symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><path d="M16 4.2c1.3.4 2.2 1.6 2.2 3s-.9 2.6-2.2 3M20.5 20c0-2.6-1.8-4.8-4.2-5.4"/></symbol>
+<symbol id="icon-link" viewBox="0 0 24 24"><path d="M9 15l6-6"/><path d="M13 5l1-1a3.5 3.5 0 1 1 5 5l-1 1M11 19l-1 1a3.5 3.5 0 1 1-5-5l1-1"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="icon-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/></symbol>
+<symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12 3h6a2 2 0 0 1 2 2v6L11 20l-8-8L12 3Z"/><circle cx="16" cy="8" r="1.3"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></symbol>
+<symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6Z"/></symbol>
+<symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.7"/><path d="M21 16l-5.5-5.5L4 21"/></symbol>
+<symbol id="icon-audio" viewBox="0 0 24 24"><path d="M3 12h2M7 8v8M11 5v14M15 8v8M19 10v4M22 12h-1"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9.3 12l1.8 1.8L15 10"/></symbol>
+<symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="icon-film" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M7 4v16M17 4v16M2.5 9h4.5M2.5 15h4.5M17 9h4.5M17 15h4.5"/></symbol>
+<symbol id="icon-presentation" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M10 9.3v4.4l4-2.2z"/></symbol>
+<symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="5" y="12" width="3.2" height="7"/><rect x="10.4" y="7" width="3.2" height="12"/><rect x="15.8" y="15" width="3.2" height="4"/></symbol>
+<symbol id="icon-idea" viewBox="0 0 24 24"><path d="M9 21h6M10 18h4"/><path d="M12 3a6.5 6.5 0 0 0-3.8 11.8c.6.5 1.3 1.3 1.3 2.2h5c0-.9.7-1.7 1.3-2.2A6.5 6.5 0 0 0 12 3Z"/></symbol>
+<symbol id="icon-budget" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/><path d="M3 8l1.5-3a2 2 0 0 1 1.8-1.1H17"/><circle cx="16.5" cy="13" r="1.4"/></symbol>
+</svg>
+
+<nav class="topnav"><div class="navin">
+<a class="brand" href="index.html"><svg class="ic"><use href="#icon-film"/></svg><span>[Nome do Projeto]</span></a>
+<div class="navlinks">
+<a href="index.html" data-page="inicio"><svg class="ic"><use href="#icon-home"/></svg>Visão geral</a>
+<a href="ideias.html" data-page="ideias"><svg class="ic"><use href="#icon-idea"/></svg>Ideias</a>
+<a href="projeto.html" data-page="projeto"><svg class="ic"><use href="#icon-target"/></svg>Projeto</a>
+<a href="transcricoes.html" data-page="transcricoes"><svg class="ic"><use href="#icon-mic"/></svg>Transcrições</a>
+<a href="identidade.html" data-page="identidade" class="on"><svg class="ic"><use href="#icon-palette"/></svg>Identidade</a>
+<div class="navmore">
+<button type="button" class="navmorebtn" aria-haspopup="true" aria-expanded="false">Mais<svg class="ic"><use href="#icon-chevron"/></svg></button>
+<div class="navmorepanel">
+<a href="apresentacao.html" data-page="apresentacao"><svg class="ic"><use href="#icon-presentation"/></svg>Apresentação</a>
+<a href="metricas.html" data-page="metricas"><svg class="ic"><use href="#icon-chart"/></svg>Métricas</a>
+<a href="orcamento.html" data-page="orcamento"><svg class="ic"><use href="#icon-budget"/></svg>Orçamento</a>
+<a href="arquivo.html" data-page="arquivo"><svg class="ic"><use href="#icon-folder"/></svg>Arquivo</a>
+</div>
+</div>
+</div>
+<button type="button" class="navtoggle" aria-label="Abrir menu" aria-expanded="false"><svg class="ic ic-lg"><use href="#icon-menu"/></svg></button>
+</div></nav>
+
+<main>
+<section class="section-tight"><div class="wrap">
+<div class="readonly-flag fade-up"><svg class="ic"><use href="#icon-eye"/></svg><span>Referência oficial de marca do projeto — logo, cores, tipografia e diretrizes, todos em tamanho ampliado para facilitar a consulta por quem produz peças e materiais.</span></div>
+<div class="shead fade-up"><svg class="ic ic-lg"><use href="#icon-palette"/></svg><h2>Identidade visual</h2></div>
+<p class="sdesc fade-up">Logo, paleta oficial, tipografia e elementos gráficos do projeto — a referência para qualquer peça, thumbnail ou material derivado.</p>
+
+<div class="idhero fade-up">
+<div class="idlogo"><img alt="Logo do projeto" data-mount="logo"><div class="fb">LOGO<br>AQUI</div></div>
+<p class="idnote">O logo deve sempre ter espaço de respiro ao redor (não colar em bordas ou outros elementos) e, de preferência, aparecer sobre fundo escuro — é o contexto em que a marca foi desenhada. Evite distorcer, girar ou aplicar sombras/efeitos sobre ele.</p>
+</div>
+</div></section>
+
+<section id="cores"><div class="wrap">
+<div class="shead fade-up"><span class="snum">01</span><svg class="ic"><use href="#icon-tag"/></svg><h2>Paleta de cores</h2></div>
+<p class="sdesc fade-up">Cada cor com seu nome, código e a função que ela cumpre no projeto — use esta referência para manter tudo consistente em peças externas.</p>
+<div class="swatchgrid fade-up">
+
+<div class="swatch"><div class="fill c-acc"><span class="check">texto escuro</span></div><div class="meta">
+<div class="sname">Destaque (âmbar)</div>
+<span class="scode">HEX #E8B04B</span><span class="scode">RGB 232, 176, 75</span>
+<div class="sfunc">Cor de marca. Usada em títulos de destaque, ícones ativos, badges de status e links de navegação selecionados.</div></div></div>
+
+<div class="swatch"><div class="fill c-acc2"><span class="check">texto escuro</span></div><div class="meta">
+<div class="sname">Destaque claro</div>
+<span class="scode">HEX #F0C574</span><span class="scode">RGB 240, 197, 116</span>
+<div class="sfunc">Variação mais clara do destaque — usada em estados de hover e gradientes junto com o destaque principal.</div></div></div>
+
+<div class="swatch"><div class="fill c-cool"><span class="check">texto claro</span></div><div class="meta">
+<div class="sname">Informação</div>
+<span class="scode">HEX #5B9DD9</span><span class="scode">RGB 91, 157, 217</span>
+<div class="sfunc">Links, referências e itens neutros de informação (ex: fontes de pesquisa, contatos).</div></div></div>
+
+<div class="swatch"><div class="fill c-ok"><span class="check">texto escuro</span></div><div class="meta">
+<div class="sname">Concluído</div>
+<span class="scode">HEX #5CC9A7</span><span class="scode">RGB 92, 201, 167</span>
+<div class="sfunc">Indica progresso, tarefas concluídas e itens verificados/confirmados.</div></div></div>
+
+<div class="swatch"><div class="fill c-hot"><span class="check">texto claro</span></div><div class="meta">
+<div class="sname">Atenção</div>
+<span class="scode">HEX #E2564D</span><span class="scode">RGB 226, 86, 77</span>
+<div class="sfunc">Pendências, dúvidas em aberto e itens que ainda precisam de verificação.</div></div></div>
+
+<div class="swatch"><div class="fill c-bg"><span class="check">texto claro</span></div><div class="meta">
+<div class="sname">Fundo</div>
+<span class="scode">HEX #0B0C10</span><span class="scode">RGB 11, 12, 16</span>
+<div class="sfunc">Cor de fundo principal de todas as páginas — a base do tema escuro do projeto.</div></div></div>
+
+<div class="swatch"><div class="fill c-card"><span class="check">texto claro</span></div><div class="meta">
+<div class="sname">Cartão</div>
+<span class="scode">HEX #16181F</span><span class="scode">RGB 22, 24, 31</span>
+<div class="sfunc">Fundo dos cartões e blocos de conteúdo, para diferenciar do fundo da página.</div></div></div>
+
+<div class="swatch"><div class="fill c-tx"><span class="check">texto escuro</span></div><div class="meta">
+<div class="sname">Texto principal</div>
+<span class="scode">HEX #E8E9EE</span><span class="scode">RGB 232, 233, 238</span>
+<div class="sfunc">Cor do texto de títulos e conteúdo principal sobre o fundo escuro.</div></div></div>
+
+<div class="swatch"><div class="fill c-tx2"><span class="check">texto escuro</span></div><div class="meta">
+<div class="sname">Texto secundário</div>
+<span class="scode">HEX #A3A8B8</span><span class="scode">RGB 163, 168, 184</span>
+<div class="sfunc">Parágrafos de apoio, descrições e legendas — menos ênfase que o texto principal.</div></div></div>
+
+</div>
+</div></section>
+
+<section id="tipografia"><div class="wrap">
+<div class="shead fade-up"><span class="snum">02</span><svg class="ic"><use href="#icon-file"/></svg><h2>Tipografia</h2></div>
+<p class="sdesc fade-up">Duas famílias tipográficas: uma para títulos e texto corrido, outra (monoespaçada) para rótulos, códigos e metadados — é o que dá o ar de "painel técnico" ao projeto.</p>
+
+<div class="fontcard fade-up">
+<div class="fname"><svg class="ic"><use href="#icon-tag"/></svg>Fonte principal — títulos e texto corrido</div>
+<div class="fsample">Aa Bb Cc — [Título do Projeto]</div>
+<div class="fmeta">-apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif</div>
+</div>
+
+<div class="fontcard fade-up">
+<div class="fname"><svg class="ic"><use href="#icon-tag"/></svg>Fonte monoespaçada — rótulos, códigos e datas</div>
+<div class="fsample mono">00 · ÍNDICE · 17/08/2026 · STATUS: EM CAPTAÇÃO</div>
+<div class="fmeta">ui-monospace, "SF Mono", Menlo, Consolas, monospace</div>
+</div>
+</div></section>
+
+<section id="elementos"><div class="wrap">
+<div class="shead fade-up"><span class="snum">03</span><svg class="ic"><use href="#icon-image"/></svg><h2>Elementos gráficos</h2></div>
+<p class="sdesc fade-up">Padrões visuais recorrentes nas peças do projeto.</p>
+<div class="gfxgrid fade-up">
+
+<div class="gfx"><div class="prev"><svg class="ic"><use href="#icon-target"/></svg></div><div class="glabel">Badges de status</div><div class="gdesc">Pílulas com ponto colorido — usadas para indicar a etapa atual do projeto.</div></div>
+
+<div class="gfx"><div class="prev"><svg class="ic"><use href="#icon-check"/></svg></div><div class="glabel">Barras de progresso</div><div class="gdesc">Gradiente âmbar → verde, cantos arredondados, sempre com o número ao lado.</div></div>
+
+<div class="gfx"><div class="prev"><svg class="ic"><use href="#icon-calendar"/></svg></div><div class="glabel">Linha do tempo</div><div class="gdesc">Linha vertical pontilhada com marcadores circulares para marcos e datas.</div></div>
+
+<div class="gfx"><div class="prev"><svg class="ic"><use href="#icon-tag"/></svg></div><div class="glabel">Ícones de linha</div><div class="gdesc">Traço fino (1.8px), cantos arredondados, sempre monocromáticos (cor do texto ao redor).</div></div>
+
+</div>
+</div></section>
+
+<section id="diretrizes"><div class="wrap">
+<div class="shead fade-up"><span class="snum">04</span><svg class="ic"><use href="#icon-alert"/></svg><h2>Diretrizes visuais</h2></div>
+<div class="legend fade-up">
+<div class="lg"><h4><svg class="ic"><use href="#icon-check"/></svg>Fundo sempre escuro</h4><p>Toda a identidade foi pensada para fundo escuro — evite aplicar o logo ou as cores de destaque sobre fundos claros.</p></div>
+<div class="lg"><h4><svg class="ic"><use href="#icon-check"/></svg>Uma cor de destaque por vez</h4><p>O âmbar (--acc) marca o que é mais importante na tela. Não usar mais de uma cor "gritante" na mesma peça.</p></div>
+<div class="lg"><h4><svg class="ic"><use href="#icon-check"/></svg>Hierarquia por peso, não por tamanho</h4><p>Prefira variar peso e cor do texto (tx / tx2 / tx3) a criar tamanhos de fonte muito diferentes.</p></div>
+</div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+<b data-mount="footerProject">[Título do Projeto]</b><span> · central de produção · painel somente para consulta</span><br>
+<span class="fnote"><svg class="ic"><use href="#icon-clock"/></svg><span data-mount="footerPublished">Conteúdo publicado em: —</span></span>
+</div></footer>
+
+<script type="application/json" id="siteData">
+{
+  "meta": {
+    "projectName": "[Nome do Projeto]",
+    "logo": "",
+    "lastUpdate": { "weekday": "Segunda-feira", "date": "17 de agosto de 2026", "time": "01:36" }
+  }
+}
+</script>
+<script src="assets/main.js"></script>
+</body></html>

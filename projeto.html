@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>[Título do Projeto] · Projeto / Planejamento · central de produção</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%230b0c10%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%276%27 fill=%27%23e8b04b%27/%3E%3C/svg%3E">
+</head>
+<body data-page="projeto">
+
+<svg class="icon-sprite" aria-hidden="true">
+<symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></symbol>
+<symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="icon-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
+<symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-1 2-2 0-.6-.2-1-.5-1.4-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4c0-4.4-4-7.5-9-7.5Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="8" r="1"/></symbol>
+<symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><path d="M16 4.2c1.3.4 2.2 1.6 2.2 3s-.9 2.6-2.2 3M20.5 20c0-2.6-1.8-4.8-4.2-5.4"/></symbol>
+<symbol id="icon-link" viewBox="0 0 24 24"><path d="M9 15l6-6"/><path d="M13 5l1-1a3.5 3.5 0 1 1 5 5l-1 1M11 19l-1 1a3.5 3.5 0 1 1-5-5l1-1"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="icon-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/></symbol>
+<symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12 3h6a2 2 0 0 1 2 2v6L11 20l-8-8L12 3Z"/><circle cx="16" cy="8" r="1.3"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></symbol>
+<symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6Z"/></symbol>
+<symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.7"/><path d="M21 16l-5.5-5.5L4 21"/></symbol>
+<symbol id="icon-audio" viewBox="0 0 24 24"><path d="M3 12h2M7 8v8M11 5v14M15 8v8M19 10v4M22 12h-1"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9.3 12l1.8 1.8L15 10"/></symbol>
+<symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="icon-film" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M7 4v16M17 4v16M2.5 9h4.5M2.5 15h4.5M17 9h4.5M17 15h4.5"/></symbol>
+<symbol id="icon-presentation" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M10 9.3v4.4l4-2.2z"/></symbol>
+<symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="5" y="12" width="3.2" height="7"/><rect x="10.4" y="7" width="3.2" height="12"/><rect x="15.8" y="15" width="3.2" height="4"/></symbol>
+<symbol id="icon-idea" viewBox="0 0 24 24"><path d="M9 21h6M10 18h4"/><path d="M12 3a6.5 6.5 0 0 0-3.8 11.8c.6.5 1.3 1.3 1.3 2.2h5c0-.9.7-1.7 1.3-2.2A6.5 6.5 0 0 0 12 3Z"/></symbol>
+<symbol id="icon-budget" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/><path d="M3 8l1.5-3a2 2 0 0 1 1.8-1.1H17"/><circle cx="16.5" cy="13" r="1.4"/></symbol>
+</svg>
+
+<nav class="topnav"><div class="navin">
+<a class="brand" href="index.html"><svg class="ic"><use href="#icon-film"/></svg><span>[Nome do Projeto]</span></a>
+<div class="navlinks">
+<a href="index.html" data-page="inicio"><svg class="ic"><use href="#icon-home"/></svg>Visão geral</a>
+<a href="ideias.html" data-page="ideias"><svg class="ic"><use href="#icon-idea"/></svg>Ideias</a>
+<a href="projeto.html" data-page="projeto" class="on"><svg class="ic"><use href="#icon-target"/></svg>Projeto</a>
+<a href="transcricoes.html" data-page="transcricoes"><svg class="ic"><use href="#icon-mic"/></svg>Transcrições</a>
+<a href="identidade.html" data-page="identidade"><svg class="ic"><use href="#icon-palette"/></svg>Identidade</a>
+<div class="navmore">
+<button type="button" class="navmorebtn" aria-haspopup="true" aria-expanded="false">Mais<svg class="ic"><use href="#icon-chevron"/></svg></button>
+<div class="navmorepanel">
+<a href="apresentacao.html" data-page="apresentacao"><svg class="ic"><use href="#icon-presentation"/></svg>Apresentação</a>
+<a href="metricas.html" data-page="metricas"><svg class="ic"><use href="#icon-chart"/></svg>Métricas</a>
+<a href="orcamento.html" data-page="orcamento"><svg class="ic"><use href="#icon-budget"/></svg>Orçamento</a>
+<a href="arquivo.html" data-page="arquivo"><svg class="ic"><use href="#icon-folder"/></svg>Arquivo</a>
+</div>
+</div>
+</div>
+<button type="button" class="navtoggle" aria-label="Abrir menu" aria-expanded="false"><svg class="ic ic-lg"><use href="#icon-menu"/></svg></button>
+</div></nav>
+
+<main>
+<section class="section-tight"><div class="wrap">
+<div class="readonly-flag fade-up"><svg class="ic"><use href="#icon-eye"/></svg><span>Somente consulta — objetivos, cronograma e checklist aparecem aqui como registro do planejamento, sem nenhum campo para marcar ou editar.</span></div>
+<div class="shead fade-up"><svg class="ic ic-lg"><use href="#icon-target"/></svg><h2>Projeto / Planejamento</h2></div>
+<p class="sdesc fade-up">Objetivos, estratégia, equipe, cronograma, calendário, checklist e todo o material de apoio da produção — organizados nas seções abaixo. O andamento geral da produção agora fica em destaque na <a href="index.html#andamento">Visão geral</a>.</p>
+<div class="idx fade-up idx-compact">
+<a class="ix ix-compact" href="#objetivos"><span class="ixt ixt-sm">Objetivos</span></a>
+<a class="ix ix-compact" href="#equipe"><span class="ixt ixt-sm">Equipe</span></a>
+<a class="ix ix-compact" href="#cronograma"><span class="ixt ixt-sm">Cronograma</span></a>
+<a class="ix ix-compact" href="#calendario"><span class="ixt ixt-sm">Calendário</span></a>
+<a class="ix ix-compact" href="#checklist"><span class="ixt ixt-sm">Checklist</span></a>
+<a class="ix ix-compact" href="#pesquisa"><span class="ixt ixt-sm">Pesquisa</span></a>
+<a class="ix ix-compact" href="#material"><span class="ixt ixt-sm">Biblioteca</span></a>
+<a class="ix ix-compact" href="#notas"><span class="ixt ixt-sm">Notas</span></a>
+</div>
+</div></section>
+
+<section id="objetivos"><div class="wrap">
+<div class="shead fade-up"><span class="snum">01</span><svg class="ic"><use href="#icon-target"/></svg><h2>Objetivos e estratégia</h2></div>
+<div class="two fade-up">
+<div>
+<h4 class="mini"><svg class="ic"><use href="#icon-file"/></svg>Sinopse</h4>
+<p class="body" id="objSinopse1"></p>
+<p class="body" id="objSinopse2"></p>
+</div>
+<div>
+<h4 class="mini"><svg class="ic"><use href="#icon-target"/></svg>Tese / motivação</h4>
+<p class="body" id="objTese"></p>
+<h4 class="mini"><svg class="ic"><use href="#icon-palette"/></svg>Estratégia / tom</h4>
+<p class="body" id="objTom"></p>
+<div class="tags" id="objTags"></div>
+</div>
+</div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+<div class="shead fade-up"><span class="snum">02</span><svg class="ic"><use href="#icon-users"/></svg><h2>Equipe</h2></div>
+<p class="sdesc fade-up">Quem está no projeto, com função e as tarefas de cada um.</p>
+<div class="team fade-up" id="equipeList"></div>
+</div></section>
+
+<section id="cronograma"><div class="wrap">
+<div class="shead fade-up"><span class="snum">03</span><svg class="ic"><use href="#icon-calendar"/></svg><h2>Cronograma</h2></div>
+<p class="sdesc fade-up">Marcos e datas da produção.</p>
+<div class="tl fade-up" id="cronogramaList"></div>
+</div></section>
+
+<section id="calendario"><div class="wrap">
+<div class="shead fade-up"><span class="snum">04</span><svg class="ic"><use href="#icon-calendar"/></svg><h2>Calendário</h2></div>
+<p class="sdesc fade-up">Grade do mês com as datas marcadas. Clique num dia para ver os eventos daquela data.</p>
+
+<div class="calctl fade-up">
+<button type="button" class="navbtn" id="calPrev" title="mês anterior">‹</button>
+<div id="calLabel">—</div>
+<button type="button" class="navbtn" id="calNext" title="próximo mês">›</button>
+<button type="button" class="navbtn today" id="calToday" title="ir para hoje">hoje</button>
+</div>
+
+<div class="calgrid fade-up" id="calGrid"></div>
+
+<div class="caldetail fade-up" id="calDetail">
+<div class="calead"><svg class="ic"><use href="#icon-calendar"/></svg>Eventos do dia selecionado</div>
+<div class="callist"></div>
+</div>
+</div></section>
+
+<section id="checklist"><div class="wrap">
+<div class="shead fade-up"><span class="snum">05</span><svg class="ic"><use href="#icon-check"/></svg><h2>Checklist de produção</h2></div>
+<p class="sdesc fade-up">Registro visual do que já foi concluído em cada etapa — apenas informativo, sem possibilidade de marcar pela interface.</p>
+<div class="ckbar fade-up"><span class="num" id="ckBarNum">0 / 0 concluídas</span>
+<div class="bar"><div class="fill" id="ckBarFill"></div></div></div>
+<div class="fade-up" id="checklistGroups"></div>
+</div></section>
+
+<section id="pesquisa"><div class="wrap">
+<div class="shead fade-up"><span class="snum">06</span><svg class="ic"><use href="#icon-search"/></svg><h2>Pesquisa e fontes</h2></div>
+<p class="sdesc fade-up">Espaço dedicado para links, referências e verificação — separado do material já captado.</p>
+<h4 class="mini fade-up"><svg class="ic"><use href="#icon-file"/></svg>Notas gerais de pesquisa</h4>
+<p class="body fade-up mb-lg" id="pesquisaNotas"></p>
+<div class="srcg fade-up" id="fontesList"></div>
+</div></section>
+
+<section id="material"><div class="wrap">
+<div class="shead fade-up"><span class="snum">07</span><svg class="ic"><use href="#icon-file"/></svg><h2>Biblioteca de material</h2></div>
+<p class="sdesc fade-up">Catálogo do que já foi captado.</p>
+<a class="pagecard fade-up drivebtn" id="driveButton" href="#" target="_blank" rel="noopener" hidden>
+<svg class="ic"><use href="#icon-folder"/></svg>
+<h3 data-mount="driveLabel">Acessar material bruto no Drive</h3>
+<p>Abre a pasta de material bruto (vídeo, áudio e imagens) direto no Google Drive, em outra aba.</p>
+</a>
+<div class="matg fade-up" id="materialList"></div>
+</div></section>
+
+<section id="notas"><div class="wrap">
+<div class="shead fade-up"><span class="snum">08</span><svg class="ic"><use href="#icon-alert"/></svg><h2>Notas e pendências</h2></div>
+<p class="sdesc fade-up">Dúvidas em aberto, decisões que precisam ser tomadas e contatos a confirmar antes de seguir com a produção.</p>
+<div class="fade-up" id="notasList"></div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+<b data-mount="footerProject">[Título do Projeto]</b><span> · central de produção · painel somente para consulta</span><br>
+<span class="fnote"><svg class="ic"><use href="#icon-clock"/></svg><span data-mount="footerPublished">Conteúdo publicado em: —</span></span>
+</div></footer>
+
+<script type="application/json" id="siteData">
+{
+  "meta": {
+    "projectName": "[Nome do Projeto]",
+    "lastUpdate": { "weekday": "Segunda-feira", "date": "17 de agosto de 2026", "time": "01:36" }
+  },
+  "objetivos": {
+    "sinopse1": "[Sinopse completa do projeto — dois ou três parágrafos descrevendo quem são os personagens/entrevistados, o que acontece, e o arco da história.]",
+    "sinopse2": "[Segundo parágrafo, se precisar de mais espaço — contexto, estrutura ou ponto de virada.]",
+    "tese": "[Por que esse projeto existe, o que ele quer provar ou revelar, e por que agora.]",
+    "tom": "[Referências de estilo, formato (observacional, entrevista, road movie, investigativo) e o que evitar.]",
+    "tags": ["tema 1", "tema 2", "tema 3", "tema 4"]
+  },
+  "equipe": [
+    { "name": "[Nome do participante]", "role": "Direção", "tasks": ["roteiro", "entrevistas", "edição final"] },
+    { "name": "[Nome do participante]", "role": "Produção", "tasks": ["agenda", "contato com fontes", "logística"] },
+    { "name": "[Nome do participante]", "role": "Câmera e som", "tasks": ["captação de imagem", "captação de áudio"] }
+  ],
+  "cronograma": [
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Pauta fechada / roteiro aprovado]", "desc": "[O que foi decidido nesta etapa.]", "status": "feito" },
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Primeiras entrevistas agendadas]", "desc": "[Detalhe relevante.]", "status": "feito" },
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Captação em andamento]", "desc": "[O que está acontecendo agora, o foco da semana.]", "status": "agora" },
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Início da edição]", "desc": "[O que precisa estar pronto antes disso começar.]", "status": "" },
+    { "date": "[00/00]", "label": "[etapa]", "title": "[Entrega final]", "desc": "[Prazo e formato de entrega.]", "status": "" }
+  ],
+  "calendario": [
+    { "date": "2026-08-20", "title": "[Reunião de pauta]", "desc": "[Detalhe do que será decidido.]", "color": "ok" },
+    { "date": "2026-08-25", "title": "[Gravação — locação 1]", "desc": "[Equipe e equipamento necessários.]", "color": "cool" },
+    { "date": "2026-09-02", "title": "[Entrega de decupagem]", "desc": "", "color": "hot" }
+  ],
+  "checklist": [
+    { "group": "Pré-produção", "icon": "check", "items": [
+      { "text": "[Definir pauta / roteiro inicial]", "done": true },
+      { "text": "[Levantar e confirmar fontes / personagens]", "done": true },
+      { "text": "[Fechar equipe e agenda de captação]", "done": false },
+      { "text": "[Providenciar autorizações e termos de consentimento]", "done": false }
+    ] },
+    { "group": "Captação", "icon": "mic", "items": [
+      { "text": "[Gravar entrevista com (fonte 1)]", "done": true },
+      { "text": "[Gravar entrevista com (fonte 2)]", "done": false },
+      { "text": "[Captar imagens de apoio / B-roll]", "done": false },
+      { "text": "[Backup do material bruto em dois locais]", "done": true }
+    ] },
+    { "group": "Edição", "icon": "film", "items": [
+      { "text": "[Transcrever e catalogar o material]", "done": false },
+      { "text": "[Selecionar os melhores trechos / decupagem]", "done": false },
+      { "text": "[Montar estrutura / roteiro de edição]", "done": false },
+      { "text": "[Corte fino e trilha sonora]", "done": false }
+    ] },
+    { "group": "Entrega", "icon": "arrow", "items": [
+      { "text": "[Revisão final e checagem de fatos]", "done": false },
+      { "text": "[Exportar nos formatos exigidos]", "done": false },
+      { "text": "[Enviar / publicar]", "done": false }
+    ] }
+  ],
+  "pesquisa": {
+    "notas": "[Resumo do que já foi pesquisado, linhas de investigação em aberto, e o que ainda precisa ser checado antes de gravar ou publicar.]",
+    "fontes": [
+      { "titulo": "[Título ou nome da fonte]", "url": "https://", "tipo": "[tipo, ex: reportagem]", "statusText": "verificado", "statusClass": "ok", "nota": "[o que essa fonte confirma, contradiz ou de onde veio o dado]" },
+      { "titulo": "[Título ou nome da fonte]", "url": "https://", "tipo": "[tipo, ex: dado oficial]", "statusText": "a verificar", "statusClass": "pend", "nota": "[o que essa fonte confirma, contradiz ou de onde veio o dado]" }
+    ]
+  },
+  "material": {
+    "driveLabel": "Acessar material bruto no Drive",
+    "driveUrl": "https://drive.google.com/drive/folders/SEU-ID-AQUI",
+    "itens": [
+      { "id": "ENT-01", "titulo": "[Entrevista com (nome)]", "tipo": "entrevista", "duracao": "00:00", "statusText": "transcrita", "statusClass": "ok", "arquivo": "[arquivo.mp4]" },
+      { "id": "AUD-01", "titulo": "[Áudio de campo — descrição]", "tipo": "áudio", "duracao": "00:00", "statusText": "a transcrever", "statusClass": "pend", "arquivo": "[arquivo.wav]" },
+      { "id": "IMG-01", "titulo": "[B-roll — local/descrição]", "tipo": "imagem", "duracao": "", "statusText": "pendente", "statusClass": "pend", "arquivo": "[pasta/arquivo]" }
+    ]
+  },
+  "notas": [
+    { "tipo": "duvida", "titulo": "[Pergunta em aberto]", "texto": "[Descreva a dúvida e o que precisa ser verificado para resolvê-la.]" },
+    { "tipo": "decisao", "titulo": "[Decisão a tomar]", "texto": "[Descreva as opções e o que falta para decidir.]" },
+    { "tipo": "contato", "titulo": "[Pessoa ou instituição]", "texto": "[O que precisa ser confirmado com essa pessoa e até quando.]" }
+  ]
+}
+</script>
+<script src="assets/main.js"></script>
+</body></html>

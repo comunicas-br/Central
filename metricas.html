@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>[Título do Projeto] · Métricas de marketing · central de produção</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%230b0c10%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%276%27 fill=%27%23e8b04b%27/%3E%3C/svg%3E">
+</head>
+<body data-page="metricas">
+
+<svg class="icon-sprite" aria-hidden="true">
+<symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></symbol>
+<symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="icon-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol>
+<symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-1 2-2 0-.6-.2-1-.5-1.4-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4c0-4.4-4-7.5-9-7.5Z"/><circle cx="7.5" cy="10.5" r="1"/><circle cx="10.5" cy="7" r="1"/><circle cx="15" cy="8" r="1"/></symbol>
+<symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5"/><path d="M16 4.2c1.3.4 2.2 1.6 2.2 3s-.9 2.6-2.2 3M20.5 20c0-2.6-1.8-4.8-4.2-5.4"/></symbol>
+<symbol id="icon-link" viewBox="0 0 24 24"><path d="M9 15l6-6"/><path d="M13 5l1-1a3.5 3.5 0 1 1 5 5l-1 1M11 19l-1 1a3.5 3.5 0 1 1-5-5l1-1"/></symbol>
+<symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="icon-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v5h5"/></symbol>
+<symbol id="icon-tag" viewBox="0 0 24 24"><path d="M12 3h6a2 2 0 0 1 2 2v6L11 20l-8-8L12 3Z"/><circle cx="16" cy="8" r="1.3"/></symbol>
+<symbol id="icon-alert" viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></symbol>
+<symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/></symbol>
+<symbol id="icon-folder" viewBox="0 0 24 24"><path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6Z"/></symbol>
+<symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.7"/><path d="M21 16l-5.5-5.5L4 21"/></symbol>
+<symbol id="icon-audio" viewBox="0 0 24 24"><path d="M3 12h2M7 8v8M11 5v14M15 8v8M19 10v4M22 12h-1"/></symbol>
+<symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9.3 12l1.8 1.8L15 10"/></symbol>
+<symbol id="icon-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="icon-film" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M7 4v16M17 4v16M2.5 9h4.5M2.5 15h4.5M17 9h4.5M17 15h4.5"/></symbol>
+<symbol id="icon-presentation" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M10 9.3v4.4l4-2.2z"/></symbol>
+<symbol id="icon-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="5" y="12" width="3.2" height="7"/><rect x="10.4" y="7" width="3.2" height="12"/><rect x="15.8" y="15" width="3.2" height="4"/></symbol>
+<symbol id="icon-idea" viewBox="0 0 24 24"><path d="M9 21h6M10 18h4"/><path d="M12 3a6.5 6.5 0 0 0-3.8 11.8c.6.5 1.3 1.3 1.3 2.2h5c0-.9.7-1.7 1.3-2.2A6.5 6.5 0 0 0 12 3Z"/></symbol>
+<symbol id="icon-budget" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/><path d="M3 8l1.5-3a2 2 0 0 1 1.8-1.1H17"/><circle cx="16.5" cy="13" r="1.4"/></symbol>
+</svg>
+
+<nav class="topnav"><div class="navin">
+<a class="brand" href="index.html"><svg class="ic"><use href="#icon-film"/></svg><span>[Nome do Projeto]</span></a>
+<div class="navlinks">
+<a href="index.html" data-page="inicio"><svg class="ic"><use href="#icon-home"/></svg>Visão geral</a>
+<a href="ideias.html" data-page="ideias"><svg class="ic"><use href="#icon-idea"/></svg>Ideias</a>
+<a href="projeto.html" data-page="projeto"><svg class="ic"><use href="#icon-target"/></svg>Projeto</a>
+<a href="transcricoes.html" data-page="transcricoes"><svg class="ic"><use href="#icon-mic"/></svg>Transcrições</a>
+<a href="identidade.html" data-page="identidade"><svg class="ic"><use href="#icon-palette"/></svg>Identidade</a>
+<div class="navmore">
+<button type="button" class="navmorebtn on" aria-haspopup="true" aria-expanded="false">Mais<svg class="ic"><use href="#icon-chevron"/></svg></button>
+<div class="navmorepanel">
+<a href="apresentacao.html" data-page="apresentacao"><svg class="ic"><use href="#icon-presentation"/></svg>Apresentação</a>
+<a href="metricas.html" data-page="metricas" class="on"><svg class="ic"><use href="#icon-chart"/></svg>Métricas</a>
+<a href="orcamento.html" data-page="orcamento"><svg class="ic"><use href="#icon-budget"/></svg>Orçamento</a>
+<a href="arquivo.html" data-page="arquivo"><svg class="ic"><use href="#icon-folder"/></svg>Arquivo</a>
+</div>
+</div>
+</div>
+<button type="button" class="navtoggle" aria-label="Abrir menu" aria-expanded="false"><svg class="ic ic-lg"><use href="#icon-menu"/></svg></button>
+</div></nav>
+
+<main>
+<section class="section-tight"><div class="wrap">
+<div class="readonly-flag fade-up"><svg class="ic"><use href="#icon-eye"/></svg><span>Consulta apenas. Métricas de marketing e resultados das campanhas de divulgação deste projeto.</span></div>
+<div class="shead fade-up"><svg class="ic ic-lg"><use href="#icon-chart"/></svg><h2>Métricas de marketing</h2></div>
+<p class="sdesc fade-up">Alcance, engajamento e resultado das campanhas de divulgação do projeto, por plataforma.</p>
+</div></section>
+
+<section id="kpis"><div class="wrap">
+<div class="shead fade-up"><span class="snum">01</span><svg class="ic"><use href="#icon-chart"/></svg><h2>Indicadores</h2></div>
+<p class="sdesc fade-up">Números gerais de alcance e engajamento, por plataforma.</p>
+<div class="stats2 fade-up" id="kpiList"></div>
+</div></section>
+
+<section id="campanhas"><div class="wrap">
+<div class="shead fade-up"><span class="snum">02</span><svg class="ic"><use href="#icon-target"/></svg><h2>Campanhas</h2></div>
+<p class="sdesc fade-up">Ações de divulgação, período, objetivo e o resultado alcançado.</p>
+<div class="fade-up table-scroll">
+<table class="archivetbl">
+<thead><tr><th>Campanha</th><th>Período</th><th>Objetivo</th><th>Resultado</th></tr></thead>
+<tbody id="campanhasBody"></tbody>
+</table>
+</div>
+</div></section>
+
+<section id="notas-analise"><div class="wrap">
+<div class="shead fade-up"><span class="snum">03</span><svg class="ic"><use href="#icon-file"/></svg><h2>Notas de análise</h2></div>
+<p class="body fade-up" id="metricasNotas"></p>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+<b data-mount="footerProject">[Título do Projeto]</b><span> · central de produção · painel somente para consulta</span><br>
+<span class="fnote"><svg class="ic"><use href="#icon-clock"/></svg><span data-mount="footerPublished">Conteúdo publicado em: —</span></span>
+</div></footer>
+
+<script type="application/json" id="siteData">
+{
+  "meta": {
+    "projectName": "[Nome do Projeto]",
+    "lastUpdate": { "weekday": "Segunda-feira", "date": "17 de agosto de 2026", "time": "01:36" }
+  },
+  "metricas": {
+    "kpis": [
+      { "value": "0", "label": "visualizações", "platform": "YouTube" },
+      { "value": "0", "label": "alcance", "platform": "Instagram" },
+      { "value": "0", "label": "engajamento", "platform": "Instagram" },
+      { "value": "0", "label": "cliques no link", "platform": "site" },
+      { "value": "0", "label": "inscritos/seguidores novos", "platform": "geral" },
+      { "value": "0", "label": "compartilhamentos", "platform": "geral" }
+    ],
+    "campanhas": [
+      { "nome": "[Nome da campanha / post de lançamento]", "periodo": "[00/00 a 00/00]", "objetivo": "[ex: gerar alcance inicial]", "resultado": "[o que foi alcançado]" },
+      { "nome": "[Nome da campanha]", "periodo": "[00/00 a 00/00]", "objetivo": "[objetivo]", "resultado": "[resultado]" }
+    ],
+    "notas": "[Análise geral dos resultados até aqui — o que funcionou, o que não funcionou, e ajustes de estratégia para as próximas divulgações.]"
+  }
+}
+</script>
+<script src="assets/main.js"></script>
+</body></html>
